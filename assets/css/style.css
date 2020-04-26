@@ -1,0 +1,121 @@
+/*#e5e8e1  #e3cda6*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #e3cda6;
+    height: 100vh;
+}
+
+header {
+    background: #4ea292;
+    top: 0;
+    height: 10vh;
+    min-height: 60px;
+    width: 100%;
+    border-bottom: .2em solid rgb(20, 90, 95);
+    border-top: .2em solid rgb(20, 90, 95);
+}
+
+#title {
+    color: #e5e8e1;
+    padding: .6em;
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+}
+
+main {
+    height: 50vw;
+    display: flex;
+    padding: 1em;
+}
+
+#imageDisplay {
+    width: 50%;
+    margin: 1.5px;
+}
+
+#interactiveContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#stats {
+    display: flex;
+    flex-grow: 1;
+}
+
+#lives {
+    flex-grow: 1;
+    margin: 1.5px;
+}
+
+#guessedWords {
+    flex-grow: 3;
+    margin: 1.5px;
+}
+
+#mysteryWord {
+    flex-grow: 1;
+    margin: 1.5px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+#reset {
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #4ea292;
+    font-family: 'Modak', cursive;
+    color: #e5e8e1;
+}
+
+#hint {
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #4ea292;
+    font-family: 'Modak', cursive;
+    color: #e5e8e1;
+}
+
+#solve {
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 8px;
+    background-color: #4ea292;
+    font-family: 'Modak', cursive;
+    color: #e5e8e1;
+}
+
+#scoreContainer {
+    display: flex;
+    margin-top: auto;
+}
+
+#wins {}
+
+#losses {}
+
+footer {
+    background: #4ea292;
+    height: 8vh;
+    min-height: 40px;
+    width: 100%;
+    border-bottom: .2em solid rgb(20, 90, 95);
+    border-top: .2em solid rgb(20, 90, 95);
+}
+
+#credit {
+    color: #e5e8e1;
+    padding: 1em;
+    text-align: center;
+    font-family: 'Modak', cursive;
+    font-size: 2em;
+}

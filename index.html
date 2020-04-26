@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Guess Game</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
+    <header><h1 id="title">Sandy Days Word Guesser Game</h1></header>
+    <main>
+        <div id="imageDisplay"></div>
+        <div id="interactiveContainer">
+            <div id="stats"> 
+                <div id="lives">Lives:</div>
+                <div id="guessedWords">Guessed Words</div>
+            </div>
+            <div id="mysteryWord"></div>
+            <div id="buttons">
+                <button id="reset">RESET</button>
+                <button id="hint">HINT</button>
+                <button id="solve">SOLVE</button>
+            </div>
+
+        </div>
+    </main>
+    <div id="scoreContainer">
+        <div id="wins"></div>
+        <div id="losses"></div>
+    </div>
+    <footer>
+        <p id="credit">Created by the mysterious Mr. E</p>
+    </footer>
+
+
+
+
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>
