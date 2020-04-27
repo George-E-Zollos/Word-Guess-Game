@@ -5,35 +5,40 @@ body {
     flex-direction: column;
     background-color: #e3cda6;
     height: 100vh;
+    width: 100vw;
 }
 
 header {
     background: #4ea292;
     top: 0;
-    height: 10vh;
-    min-height: 60px;
+    height: 12vh;
+    min-height: 70px;
     width: 100%;
     border-bottom: .2em solid rgb(20, 90, 95);
     border-top: .2em solid rgb(20, 90, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #title {
     color: #e5e8e1;
-    padding: .6em;
     text-align: center;
     font-family: 'Modak', cursive;
-    font-size: 4em;
+    font-size: 400%;
 }
 
 main {
     height: 50vw;
     display: flex;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 
 #imageDisplay {
     width: 50%;
     margin: 1.5px;
+    border: solid 3px #4ea292;
+    border-radius: 8px;
 }
 
 #interactiveContainer {
@@ -44,64 +49,117 @@ main {
 
 #stats {
     display: flex;
-    flex-grow: 1;
+    height: 15vh;
 }
 
 #lives {
     flex-grow: 1;
     margin: 1.5px;
+    max-height: 15vh;
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+    color: #4ea292;
+    border: solid 3px #4ea292;
+    border-radius: 8px;
+    text-align: center;
+    padding: .2em;
+    text-decoration: underline;
 }
 
-#guessedWords {
+#guessedLetters {
     flex-grow: 3;
-    margin: 1.5px;
+    margin: 2px;
+    max-height: 15vh;
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+    color: #4ea292;
+    border: solid 3px #4ea292;
+    border-radius: 8px;
+    text-align: center;
+    padding: .2em;
+    text-decoration: underline;
 }
 
-#mysteryWord {
-    flex-grow: 1;
-    margin: 1.5px;
+#mysteryWordContainer {
+    margin: 2vh 0;
+    border: solid 3px #4ea292;
+    border-radius: 8px;
+    height: 40vh;
+    display: flex;
 }
+
+#instructions {}
+
+#mysteryWord {}
 
 #buttons {
     display: flex;
     justify-content: space-around;
+    margin: 5px; 
 }
 
 #reset {
-    font-size: 2em;
-    padding: 1em;
+    font-size: 3em;
+    padding: .5em;
     border-radius: 8px;
     background-color: #4ea292;
     font-family: 'Modak', cursive;
     color: #e5e8e1;
+    transition-duration: 1s;
+}
+
+#reset:hover {
+    background-color: #274e47;
 }
 
 #hint {
-    font-size: 2em;
-    padding: 1em;
+    font-size: 3em;
+    padding: .5em;
     border-radius: 8px;
     background-color: #4ea292;
     font-family: 'Modak', cursive;
     color: #e5e8e1;
+    transition-duration: 1s;
+}
+
+#hint:hover {
+    background-color: #274e47;
 }
 
 #solve {
-    font-size: 2em;
-    padding: 1em;
+    font-size: 3em;
+    padding: .5em;
     border-radius: 8px;
     background-color: #4ea292;
     font-family: 'Modak', cursive;
     color: #e5e8e1;
+    transition-duration: 1s;
+}
+
+#solve:hover {
+    background-color: #274e47;
 }
 
 #scoreContainer {
     display: flex;
     margin-top: auto;
+    margin: 0 1em;
+    justify-content: flex-end;
+    font-family: 'Modak', cursive;
+    color: #4ea292;
+    font-size: 2em;
 }
 
-#wins {}
+#wins {
+    width: 10%;
+    margin-right: 10px;
+    padding: .2em;
+}
 
-#losses {}
+#losses {
+    width: 10%;
+    padding: .2em;
+}
 
 footer {
     background: #4ea292;
@@ -110,11 +168,13 @@ footer {
     width: 100%;
     border-bottom: .2em solid rgb(20, 90, 95);
     border-top: .2em solid rgb(20, 90, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #credit {
     color: #e5e8e1;
-    padding: 1em;
     text-align: center;
     font-family: 'Modak', cursive;
     font-size: 2em;
