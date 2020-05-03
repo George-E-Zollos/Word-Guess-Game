@@ -90,7 +90,13 @@ main {
 
 #instructions {}
 
-#mysteryWord {}
+#mysteryWord {
+    font-family: 'Modak', cursive;
+    font-size: 4em;
+    color: #4ea292;
+    text-align: center;
+
+}
 
 #buttons {
     display: flex;
